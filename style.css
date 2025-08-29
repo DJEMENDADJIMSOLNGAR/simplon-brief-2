@@ -1,0 +1,84 @@
+
+        :root {
+            --bs-primary: #0c10f3;
+            --bs-secondary: #0c10f3;
+            --bs-light: #f8f9fa;
+            --bs-dark: #0c10f3;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bs-light);
+        }
+
+        .navbar-custom {
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .navbar-custom.scrolled {
+            background-color: rgba(var(--bs-dark-rgb), 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 6px rgba(39, 39, 41, 0.1);
+        }
+
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/beyti-kebab-served-with-ayran-pickles.jpg') no-repeat center center/cover;
+            height: 100vh;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero-section h1 {
+            font-size: 4rem;
+            font-weight: 700;
+        }
+
+        .card {
+            border: none;
+            border-radius: 1rem;
+            box-shadow: 0 0.5rem 1rem rgba(14, 4, 4, 0.945);
+            transition: transform 0.2s ease-in-out;
+        }
+        
+        .card:hover {
+            transform: translateY(-0.5rem);
+        }
+
+        .card img {
+            border-top-left-radius: 1rem;
+            border-top-right-radius: 1rem;
+        }
+
+        .card-body h5 {
+            color: var(--bs-primary);
+        }
+
+        .price {
+            font-weight: 600;
+            color: var(--bs-secondary);
+        }
+
+        .bg-primary-light {
+            background-color: rgba(var(--bs-primary-rgb), 0.1);
+        }
+        
+        .bg-dark-custom {
+            background-color: var(--bs-dark);
+            color: var(--bs-light);
+        }
+        
+        .carousel-item img {
+            height: 600px;
+            object-fit: cover;
+        }
+
+        @media (max-width: 767.98px) {
+            .hero-section h1 {
+                font-size: 2.5rem;
+            }
+        }
+    
